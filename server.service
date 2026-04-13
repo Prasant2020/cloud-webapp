@@ -1,0 +1,12 @@
+[Unit]
+Description=Node Web App
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/ubuntu/app/app.js
+Restart=always
+User=ubuntu
+Environment=PORT=3000
+
+[Install]
+WantedBy=multi-user.target
