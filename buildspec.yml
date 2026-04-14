@@ -15,6 +15,4 @@ phases:
 
 artifacts:
   files:
-    - app.js
-    - package.json
-    - server.service
+    - '**/*'
