@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
 
     if (req.url === '/') {
         res.writeHead(200, {'Content-Type': 'text/plain'});
-        return res.end(`Hello from ${os.hostname()}\n`);
+        return res.end(`Hello from ${os.hostname()} - Version 2\n`);
     }
 
     // Handle unknown routes
