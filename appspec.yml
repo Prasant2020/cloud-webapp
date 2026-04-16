@@ -9,12 +9,12 @@ hooks:
   BeforeInstall:
     - location: scripts/cleanup.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
 
   AfterInstall:
     - location: scripts/install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
 
   ApplicationStart:
     - location: scripts/start.sh
